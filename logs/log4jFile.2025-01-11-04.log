@@ -1,0 +1,7 @@
+2025-01-11 04:30:15,161 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-11 04:30:15,165 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2025-01-11 04:30:15,167 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 2 ms
+2025-01-11 04:30:15,692 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 242 ms
+2025-01-11 04:30:19,739 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-1 - Starting...
+2025-01-11 04:30:21,113 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@205f810b
+2025-01-11 04:30:21,116 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-1 - Start completed.
