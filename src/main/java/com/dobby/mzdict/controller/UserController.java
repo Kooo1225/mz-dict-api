@@ -58,7 +58,7 @@ public class UserController implements UserControllerDocs{
         }
         return responseService.getSingleResult(jwtTokenProvider.createToken(String.valueOf(vo.getUserId()), sAuthList));
     }
-
+    
     @GetMapping("/test")
     public List<UserVO> getUsers(@RequestHeader(value = "X-AUTH-TOKEN") String token) {
         return service.getUsers();

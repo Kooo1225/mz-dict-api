@@ -29,6 +29,12 @@ public interface UserControllerDocs {
             @ApiResponse(responseCode = "404", description = "로그인 실패")})
     public SingleResult<String> userLogin(@RequestBody LoginVO userInfo);
 
+//    @Operation(summary = "로그아웃", description = "로그아웃 기능을 테스트 합니다.")
+//    @ApiResponses(value = {
+//            @ApiResponse(responseCode = "200", description = "로그인 성공"),
+//            @ApiResponse(responseCode = "404", description = "로그인 실패")})
+//    public SingleResult<String> userLogOut(@RequestHeader(value = "X-AUTH-TOKEN", required = true) String token);
+
     @Operation(summary = "전체 유저 조회", description = "전체 유저 정보를 조회합니다")
     @ApiResponse(responseCode = "200", description = "유저 정보 조회 성공")
     public List<UserVO> getUsers(@RequestHeader(value = "X-AUTH-TOKEN", required = true) String token);

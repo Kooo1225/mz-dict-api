@@ -1,0 +1,36 @@
+2025-01-12 16:55:22,224 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 45238 (/Users/dobby/Desktop/Workspace/mz-dict-api/build/classes/java/main started by dobby in /Users/dobby/Desktop/Workspace/mz-dict-api)
+2025-01-12 16:55:22,229 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2025-01-12 16:55:22,245 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-12 16:55:22,245 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-12 16:55:22,760 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2025-01-12 16:55:22,764 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-12 16:55:22,766 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2025-01-12 16:55:22,766 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-12 16:55:22,785 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2025-01-12 16:55:22,786 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 540 ms
+2025-01-12 16:55:22,982 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer(configure:113) - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-12 16:55:23,040 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2025-01-12 16:55:23,292 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2025-01-12 16:55:23,302 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-12 16:55:23,310 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2025-01-12 16:55:23,317 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 1.215 seconds (process running for 1.567)
+2025-01-12 16:56:21,560 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-12 16:56:21,560 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2025-01-12 16:56:21,561 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2025-01-12 16:56:40,908 [http-nio-8080-exec-10] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 235 ms
+2025-01-12 16:59:06,175 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 45406 (/Users/dobby/Desktop/Workspace/mz-dict-api/build/classes/java/main started by dobby in /Users/dobby/Desktop/Workspace/mz-dict-api)
+2025-01-12 16:59:06,179 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2025-01-12 16:59:06,192 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-12 16:59:06,192 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-12 16:59:06,627 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2025-01-12 16:59:06,631 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-12 16:59:06,632 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2025-01-12 16:59:06,632 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-12 16:59:06,650 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2025-01-12 16:59:06,651 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 457 ms
+2025-01-12 16:59:06,820 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer(configure:113) - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-12 16:59:06,874 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2025-01-12 16:59:07,118 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2025-01-12 16:59:07,128 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-12 16:59:07,134 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2025-01-12 16:59:07,140 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 1.08 seconds (process running for 1.402)

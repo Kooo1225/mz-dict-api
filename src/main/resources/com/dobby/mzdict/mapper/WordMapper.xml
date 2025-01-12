@@ -15,6 +15,7 @@
         <result property="liked" column="liked" />
         <result property="scrapCount" column="scrap_count" />
         <result property="scrapped" column="scrapped" />
+        <result property="commentCount" column="comment_count" />
     </resultMap>
 
     <resultMap id="WordDetailMap" type="com.dobby.mzdict.dto.WordDetailDTO">
@@ -63,7 +64,9 @@
             case when l.user_id is not null then true else false end as reacted,
 
             (select count(*) from scrap s where s.word_id = w.id) as scrap_count,
-            case when s.user_id is not null then true else false end as scrapped
+            case when s.user_id is not null then true else false end as scrapped,
+            
+            (select count(*) from comment c where c.word_id = w.id) as comment_count
         from
             word w
                 left join
@@ -86,7 +89,9 @@
             case when l.user_id is not null then true else false end as liked,
 
             (select count(*) from scrap s where s.word_id = w.id) as scrap_count,
-            case when s.user_id is not null then true else false end as scrapped
+            case when s.user_id is not null then true else false end as scrapped,
+
+            (select count(*) from comment c where c.word_id = w.id) as comment_count
         from
             word w
                 left join
@@ -214,7 +219,10 @@
             case when l.user_id is not null then true else false end as liked,
 
             (select count(*) from scrap s where s.word_id = w.id) as scrap_count,
-            case when s.user_id is not null then true else false end as scrapped
+            case when s.user_id is not null then true else false end as scrapped,
+
+            (select count(*) from comment c where c.word_id = w.id) as comment_count
+
         from
             word w
                 left join
@@ -237,7 +245,9 @@
             case when l.user_id is not null then true else false end as liked,
 
             (select count(*) from scrap s where s.word_id = w.id) as scrap_count,
-            case when s.user_id is not null then true else false end as scrapped
+            case when s.user_id is not null then true else false end as scrapped,
+
+            (select count(*) from comment c where c.word_id = w.id) as comment_count
         from
             word w
                 left join

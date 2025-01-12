@@ -33,4 +33,6 @@ public class WordVO {
     private int likeCount;
     private boolean liked;
 
+    private int commentCount;
+
 }

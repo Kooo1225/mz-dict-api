@@ -1,7 +1,212 @@
-2025-01-11 04:30:15,161 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-11 04:30:15,165 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
-2025-01-11 04:30:15,167 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 2 ms
-2025-01-11 04:30:15,692 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 242 ms
-2025-01-11 04:30:19,739 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-1 - Starting...
-2025-01-11 04:30:21,113 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@205f810b
-2025-01-11 04:30:21,116 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-1 - Start completed.
+2025-01-11 16:22:18,054 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 9061 (/Users/dobby/Desktop/Workspace/mz-dict-api/build/classes/java/main started by dobby in /Users/dobby/Desktop/Workspace/mz-dict-api)
+2025-01-11 16:22:18,057 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2025-01-11 16:22:18,074 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-11 16:22:18,074 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-11 16:22:18,555 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2025-01-11 16:22:18,559 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:22:18,561 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2025-01-11 16:22:18,561 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-11 16:22:18,578 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2025-01-11 16:22:18,578 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 504 ms
+2025-01-11 16:22:18,763 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer(configure:113) - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-11 16:22:18,819 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2025-01-11 16:22:19,082 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2025-01-11 16:22:19,093 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:22:19,100 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2025-01-11 16:22:19,106 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 1.175 seconds (process running for 1.542)
+2025-01-11 16:22:38,444 [http-nio-8080-exec-1] INFO  org.apache.coyote.http11.Http11Processor(log:175) - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xe00x010x000x060xdc0x030x030xdb0xbfF,0xc60xd30x9b0xfeE0x84!0xdbR0x8560xa70xcf&0x1ed/L0xcb0xc3j<n0x050x0d0x160x94@ ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-01-11 16:22:38,515 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-11 16:22:38,515 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2025-01-11 16:22:38,517 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2025-01-11 16:22:39,165 [http-nio-8080-exec-1] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 245 ms
+2025-01-11 16:22:46,698 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-1 - Starting...
+2025-01-11 16:22:47,118 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@12212505
+2025-01-11 16:22:47,122 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-1 - Start completed.
+2025-01-11 16:22:56,524 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver(logException:247) - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-01-11 16:23:23,000 [http-nio-8080-exec-5] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet](log:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:574) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.CorsConfiguration.checkOrigin(CorsConfiguration.java:701) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.DefaultCorsProcessor.checkOrigin(DefaultCorsProcessor.java:190) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.DefaultCorsProcessor.handleInternal(DefaultCorsProcessor.java:127) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.DefaultCorsProcessor.processRequest(DefaultCorsProcessor.java:106) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:87) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-01-11 16:23:57,256 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet](log:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:574) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.CorsConfiguration.checkOrigin(CorsConfiguration.java:701) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.DefaultCorsProcessor.checkOrigin(DefaultCorsProcessor.java:190) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.DefaultCorsProcessor.handleInternal(DefaultCorsProcessor.java:127) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.cors.DefaultCorsProcessor.processRequest(DefaultCorsProcessor.java:106) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:87) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-01-11 16:24:15,737 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-11 16:24:15,739 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:24:15,746 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource(close:349) - HikariPool-1 - Shutdown initiated...
+2025-01-11 16:24:15,779 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource(close:351) - HikariPool-1 - Shutdown completed.
+2025-01-11 16:24:15,833 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 9061 (/Users/dobby/Desktop/Workspace/mz-dict-api/build/classes/java/main started by dobby in /Users/dobby/Desktop/Workspace/mz-dict-api)
+2025-01-11 16:24:15,833 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2025-01-11 16:24:15,960 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2025-01-11 16:24:15,961 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:24:15,961 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2025-01-11 16:24:15,961 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-11 16:24:15,965 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2025-01-11 16:24:15,965 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 131 ms
+2025-01-11 16:24:16,045 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer(configure:113) - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-11 16:24:16,061 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2025-01-11 16:24:16,183 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2025-01-11 16:24:16,190 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:24:16,191 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2025-01-11 16:24:16,193 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.378 seconds (process running for 118.63)
+2025-01-11 16:24:16,194 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2025-01-11 16:24:45,051 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-11 16:24:45,052 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2025-01-11 16:24:45,056 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 3 ms
+2025-01-11 16:24:45,066 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-2 - Starting...
+2025-01-11 16:24:45,393 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-2 - Added connection org.mariadb.jdbc.Connection@4ad91843
+2025-01-11 16:24:45,394 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-2 - Start completed.
+2025-01-11 16:25:33,903 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:349) - HikariPool-2 - Shutdown initiated...
+2025-01-11 16:25:33,937 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:351) - HikariPool-2 - Shutdown completed.
+2025-01-11 16:25:35,110 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 9967 (/Users/dobby/Desktop/Workspace/mz-dict-api/build/classes/java/main started by dobby in /Users/dobby/Desktop/Workspace/mz-dict-api)
+2025-01-11 16:25:35,114 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2025-01-11 16:25:35,128 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-11 16:25:35,129 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-11 16:25:35,580 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2025-01-11 16:25:35,583 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:25:35,585 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2025-01-11 16:25:35,585 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-11 16:25:35,602 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2025-01-11 16:25:35,602 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 473 ms
+2025-01-11 16:25:35,780 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer(configure:113) - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-11 16:25:35,834 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2025-01-11 16:25:36,076 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2025-01-11 16:25:36,086 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-11 16:25:36,092 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2025-01-11 16:25:36,098 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 1.095 seconds (process running for 1.443)
+2025-01-11 16:25:45,664 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-11 16:25:45,664 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2025-01-11 16:25:45,665 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2025-01-11 16:25:45,739 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-1 - Starting...
+2025-01-11 16:25:46,106 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6d88739f
+2025-01-11 16:25:46,109 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-1 - Start completed.
+2025-01-11 16:28:18,396 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:349) - HikariPool-1 - Shutdown initiated...
+2025-01-11 16:28:18,430 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:351) - HikariPool-1 - Shutdown completed.
