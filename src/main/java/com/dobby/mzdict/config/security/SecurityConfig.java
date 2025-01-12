@@ -49,7 +49,7 @@ public class SecurityConfig {
 
         http
                 .authorizeHttpRequests(auth -> auth
-                    .requestMatchers("/api-docs/**","/swagger-resources/**", "/swagger-ui/**", "/swagger/**", "/user/signin", "/user/signup", "/word/non-member", "/word/info/non-member", "/word/find/non-member", "/comment/add").permitAll()
+                    .requestMatchers("/api-docs/**","/swagger-resources/**", "/swagger-ui/**", "/swagger/**", "/user/signin", "/user/signup", "/word/non-member", "/word/info/non-member", "/word/find/non-member").permitAll()
                     .anyRequest().hasRole("USER"));
 
         http.addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);

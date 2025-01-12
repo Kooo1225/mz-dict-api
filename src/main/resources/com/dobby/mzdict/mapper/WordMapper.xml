@@ -65,7 +65,7 @@
 
             (select count(*) from scrap s where s.word_id = w.id) as scrap_count,
             case when s.user_id is not null then true else false end as scrapped,
-            
+
             (select count(*) from comment c where c.word_id = w.id) as comment_count
         from
             word w
